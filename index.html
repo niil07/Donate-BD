@@ -34,12 +34,8 @@
         theme: {
           extend: {
             colors: {
-              'dark': "#111111",
+              dark: "#111111",
               "bg-green": "#B4F461",
-            },
-            backgroundImage: {
-              custom:
-                "linear-gradient(0deg, #FFF 0%, rgba(255, 255, 255, 0) 100%)",
             },
           },
         },
@@ -53,9 +49,10 @@
         <div class="navbar">
           <div class="navbar-start">
             <button
+              id="blog-btn"
               class="btn btn-xs bg-bg-green sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg px-8 py-3"
             >
-              Blog
+              <a href="blog.html">Blog</a>
             </button>
           </div>
           <div class="navbar-center">
@@ -67,7 +64,7 @@
           <div class="navbar-end">
             <img src="./img/coin.png" alt="" />
             <p class="ml-3 text-[#111111b2]">
-              <span class="" id="main-balance"> 5500 </span>BDT
+              <span class="" id="main-balance"> 5500 </span> BDT
             </p>
           </div>
         </div>
@@ -90,8 +87,12 @@
               History
             </button>
           </div>
-          <div class="py-10 carts items-center justify-center flex flex-col gap-8">
-            <div class="card-1 flex justify-between rounded-2xl p-8 border border-[#11111119]">
+          <div
+            class="py-10 carts items-center justify-center flex flex-col gap-8"
+          >
+            <div
+              class="card-1 flex justify-between rounded-2xl p-8 border border-[#11111119]"
+            >
               <div class="w-1/2 c-left">
                 <img class="" src="./img/noakhali.png" alt="" />
               </div>
@@ -99,10 +100,14 @@
                 <button
                   class="btn btn-xs bg-[#1111110D]sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg mb-3"
                 >
-                  <img src="./img/coin.png" alt="">
-                  <p class="text-base font-normal text-[#111111B2]"><span> 0 </span>BDT</p>
+                  <img src="./img/coin.png" alt="" />
+                  <p class="text-base font-normal text-[#111111B2]">
+                    <span id="noa-bal-btn"> 0 </span> BDT
+                  </p>
                 </button>
-                <h6 class="text-dark text-xl font-bold leading-8">Donate for Flood at Noakhali, Bangladesh</h6>
+                <h6 class="text-dark text-xl font-bold leading-8">
+                  Donate for Flood at Noakhali, Bangladesh
+                </h6>
                 <p class="text-base font-light leading-7 text-[#111111B2] my-3">
                   The recent floods in Noakhali have caused significant damage
                   to homes infrastructure. Your donation will help provide
@@ -112,18 +117,22 @@
                   impact on the lives of those in need.
                 </p>
                 <input
+                id="noa-inp-btn"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
                 <button
+                id="noa-don-btn"
                   class="btn btn-xs bg-bg-green sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg w-full mt-4"
                 >
                   Donate Now
                 </button>
               </div>
             </div>
-            <div class="card-2 flex justify-between rounded-2xl p-8 border border-[#11111119]">
+            <div
+              class="card-2 flex justify-between rounded-2xl p-8 border border-[#11111119]"
+            >
               <div class="w-1/2 c-left">
                 <img class="" src="./img/feni.png" alt="" />
               </div>
@@ -131,12 +140,23 @@
                 <button
                   class="btn btn-xs bg-[#1111110D]sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg mb-3"
                 >
-                  <img src="./img/coin.png" alt="">
-                  <p class="text-base font-normal text-[#111111B2]"><span> 600 </span>BDT</p>
+                  <img src="./img/coin.png" alt="" />
+                  <p class="text-base font-normal text-[#111111B2]">
+                    <span> 600 </span>BDT
+                  </p>
                 </button>
-                <h6 class="text-dark text-xl font-bold leading-8">Donate for Flood Relief in Feni,Bangladesh</h6>
+                <h6 class="text-dark text-xl font-bold leading-8">
+                  Donate for Flood Relief in Feni,Bangladesh
+                </h6>
                 <p class="text-base font-light leading-7 text-[#111111B2] my-3">
-                  The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                  The recent floods in Feni have devastated local communities,
+                  leading to severe disruption and loss. Your generous donation
+                  will help provide immediate aid, including food, clean water,
+                  and medical supplies, to those affected by this calamity.
+                  Together, we can offer crucial support and help rebuild lives
+                  in the aftermath of this disaster. Every contribution counts
+                  towards making a real difference. Please consider donating
+                  today to assist those in urgent need.
                 </p>
                 <input
                   type="text"
@@ -150,7 +170,9 @@
                 </button>
               </div>
             </div>
-            <div class="card-3 flex justify-between rounded-2xl p-8 border border-[#11111119]">
+            <div
+              class="card-3 flex justify-between rounded-2xl p-8 border border-[#11111119]"
+            >
               <div class="w-1/2 c-left">
                 <img class="" src="./img/quota-protest.png" alt="" />
               </div>
@@ -158,12 +180,24 @@
                 <button
                   class="btn btn-xs bg-[#1111110D]sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg mb-3"
                 >
-                  <img src="./img/coin.png" alt="">
-                  <p class="text-base font-normal text-[#111111B2]"><span> 2400 </span>BDT</p>
+                  <img src="./img/coin.png" alt="" />
+                  <p class="text-base font-normal text-[#111111B2]">
+                    <span> 2400 </span>BDT
+                  </p>
                 </button>
-                <h6 class="text-dark text-xl font-bold leading-8">Aid for Injured in the Quota Movement</h6>
+                <h6 class="text-dark text-xl font-bold leading-8">
+                  Aid for Injured in the Quota Movement
+                </h6>
                 <p class="text-base font-light leading-7 text-[#111111B2] my-3">
-                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                  The recent Quota movement has resulted in numerous injuries
+                  and significant hardship for many individuals. Your support is
+                  crucial in providing medical assistance, rehabilitation, and
+                  necessary supplies to those affected. By contributing, you
+                  help ensure that injured individuals receive the care and
+                  support they need during this challenging time. Every donation
+                  plays a vital role in alleviating their suffering and aiding
+                  in their recovery. Please consider making a donation to
+                  support these brave individuals in their time of need.
                 </p>
                 <input
                   type="text"
@@ -185,5 +219,8 @@
     <!-- Footer section code start -->
     <footer class="bg-[#F9F7F3] py-12"></footer>
     <!-- Footer section code end -->
+
+    <!-- Main js file -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
