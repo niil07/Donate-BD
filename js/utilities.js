@@ -6,8 +6,8 @@ function inputValueById(id) {
   return inpNum;
 }
 
-function textValueById(id){
-    const textValue = document.getElementById(id).innerText;
-    const textNum = parseFloat(textValue);
-    return textNum;
+function textValueById(id) {
+  const textValue = document.getElementById(id).innerText;
+  const textNum = parseFloat(textValue);
+  return textNum;
 }

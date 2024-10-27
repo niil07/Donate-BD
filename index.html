@@ -88,7 +88,7 @@
             </button>
           </div>
           <div
-            class="py-10 carts items-center justify-center flex flex-col gap-8"
+            class="py-10 cards items-center justify-center flex flex-col gap-8"
           >
             <div
               class="card-1 flex justify-between rounded-2xl p-8 border border-[#11111119]"
@@ -117,13 +117,13 @@
                   impact on the lives of those in need.
                 </p>
                 <input
-                id="noa-inp-btn"
+                  id="noa-inp-btn"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
                 <button
-                id="noa-don-btn"
+                  id="noa-don-btn"
                   class="btn btn-xs bg-bg-green sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg w-full mt-4"
                 >
                   Donate Now
@@ -142,7 +142,7 @@
                 >
                   <img src="./img/coin.png" alt="" />
                   <p class="text-base font-normal text-[#111111B2]">
-                    <span> 600 </span>BDT
+                    <span id="feni-bal-btn"> 600 </span> BDT
                   </p>
                 </button>
                 <h6 class="text-dark text-xl font-bold leading-8">
@@ -159,11 +159,13 @@
                   today to assist those in urgent need.
                 </p>
                 <input
+                  id="feni-inp-btn"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
                 <button
+                  id="feni-don-btn"
                   class="btn btn-xs bg-bg-green sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg w-full mt-4"
                 >
                   Donate Now
@@ -182,7 +184,7 @@
                 >
                   <img src="./img/coin.png" alt="" />
                   <p class="text-base font-normal text-[#111111B2]">
-                    <span> 2400 </span>BDT
+                    <span id="quota-bal-btn"> 2400 </span> BDT
                   </p>
                 </button>
                 <h6 class="text-dark text-xl font-bold leading-8">
@@ -200,11 +202,13 @@
                   support these brave individuals in their time of need.
                 </p>
                 <input
+                  id="quota-inp-btn"
                   type="text"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
                 <button
+                  id="quota-don-btn"
                   class="btn btn-xs bg-bg-green sm:btn-sm md:btn-md lg:btn-lg text-xl font-semibold rounded-lg w-full mt-4"
                 >
                   Donate Now
@@ -212,6 +216,28 @@
               </div>
             </div>
           </div>
+
+          <!-- modal -->
+          <!-- Open the modal using ID.showModal() method -->
+          <button class="btn" onclick="my_modal_5.showModal()">
+            
+          </button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box flex justify-between items-center flex-col">
+              <h3 id="modal-title" class="text-4xl font-bold text-dark"></h3>
+              <img class="mt-4" src="./img/coin.png" alt="">
+              <p id="modal-message" class="py-4 text-dark">
+                
+              </p>
+              <h5 id="modal-express" class="text-lg font-bold"></h5>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
         </div>
       </section>
     </main>
@@ -221,7 +247,7 @@
     <!-- Footer section code end -->
 
     <!-- js file -->
-     <script src="./js/utilities.js"></script>
+    <script src="./js/utilities.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
