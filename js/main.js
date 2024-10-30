@@ -11,27 +11,26 @@ window.addEventListener('scroll', function () {
 });
 
 // Donation functions
-let donationHistory = []; // Array to store donation history
+let donationHistory = []; 
 
-// Function to log donation
 function logDonation(title, amount) {
   const date = new Date();
   const timestamp = `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
   donationHistory.push({ title, amount, timestamp });
 }
 
-// Function to update the history display
+
 function updateHistory() {
   const historyList = document.querySelector(".donation-item");
   historyList.innerHTML = "";
 
-  // Add each donation item to the history list
+  
   donationHistory.forEach((donation) => {
     const listItem = document.createElement("div");
     listItem.className =
       "donation-item my-3 p-5 rounded-2xl border-2 border-[#1111111A]";
 
-    // Set the title and amount as text
+    
     listItem.innerHTML = `
       <h3 class="text-dark text-2xl font-bold leading-9">${donation.title} - ${donation.amount} BDT</h3>
       <span class="text-base text-[#111111B3] font-normal leading-7">Date: ${donation.timestamp} GMT +0600 (Bangladesh Standard Time)</span>
@@ -188,7 +187,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
   );
   historyBtn.classList.add("bg-bg-green");
 
-  // Toggle visibility of donationCards and historySection
+  
   donationCards.classList.add("hidden");
   historySection.classList.remove("hidden");
   updateHistory();
@@ -205,8 +204,8 @@ document.getElementById("donation-btn").addEventListener("click", function () {
   historyBtn.classList.remove("bg-bg-green");
   historyBtn.classList.add("bg-transparent", "text-[#111111B3]");
 
-  // Toggle visibility of donationCards and historySection
+  
   donationCards.classList.remove("hidden");
   historySection.classList.add("hidden");
-  updateHistory(); // Optional: refresh the history display if needed
+  updateHistory(); 
 });
